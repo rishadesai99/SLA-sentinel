@@ -1,0 +1,14 @@
+escalation_rules:
+  BREACHED:
+    notify_tier: L2
+    message_prefix: "SLA BREACHED"
+  AT RISK:
+    notify_tier: L1
+    message_prefix: "AT RISK"
+  OK:
+    notify_tier: null
+    message_prefix: null
+
+alert_limits:
+  max_alerts_per_ticket_per_hour: 1
+  max_alerts_per_person_per_shift: 10
